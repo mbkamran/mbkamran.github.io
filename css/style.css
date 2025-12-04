@@ -330,6 +330,7 @@ section {
 .service-desc {
     color: var(--secondary-color);
     font-size: 0.95rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Experience Section */
@@ -467,8 +468,8 @@ section {
     color: var(--secondary-color);
 }
 
-/* Prototype Section */
-.prototype-showcase {
+/* Portfolio Section */
+.portfolio-showcase {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: 12px;
@@ -476,30 +477,30 @@ section {
     margin-top: 2rem;
 }
 
-.prototype-content-wrapper {
+.portfolio-content-wrapper {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 3rem;
     align-items: center;
 }
 
-.prototype-info {
+.portfolio-info {
     text-align: left;
 }
 
-.prototype-gallery {
+.portfolio-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* Grid for images */
     gap: 1rem;
 }
 
-.prototype-gallery img:first-child {
+.portfolio-gallery img:first-child {
     grid-column: span 2;
     /* First image full width */
 }
 
-.prototype-img {
+.portfolio-img {
     width: 100%;
     border-radius: 8px;
     border: 1px solid var(--card-border);
@@ -507,10 +508,66 @@ section {
     cursor: pointer;
 }
 
-.prototype-img:hover {
+.portfolio-img:hover {
     transform: scale(1.02);
     box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.5);
     z-index: 10;
+}
+
+/* Testimonials Section */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(var(--glass-blur));
+    padding: 2.5rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.quote-icon {
+    font-size: 2rem;
+    color: var(--accent-color);
+    opacity: 0.5;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-text {
+    color: var(--text-color);
+    font-style: italic;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    border-top: 1px solid var(--card-border);
+    padding-top: 1.5rem;
+}
+
+.author-name {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.author-role {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 /* Contact/Resume Section */
@@ -559,11 +616,11 @@ footer {
 
 /* Responsive */
 @media (max-width: 900px) {
-    .prototype-content-wrapper {
+    .portfolio-content-wrapper {
         grid-template-columns: 1fr;
     }
 
-    .prototype-info {
+    .portfolio-info {
         text-align: center;
         margin-bottom: 2rem;
     }
