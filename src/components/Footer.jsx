@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>© 2025 Muhammad Bin Kamran. All rights reserved.</p>
+          <p>© 2026 Muhammad Bin Kamran. All rights reserved.</p>
           <div className="footer-social-links">
             <a href="https://github.com/mbkamran" target="_blank" rel="noreferrer" aria-label="GitHub">
               <i className="fa-brands fa-github" />
