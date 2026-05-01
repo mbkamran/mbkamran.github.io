@@ -20,7 +20,7 @@ export default function Home() {
         <div className="container">
           <div className="home-hero-text-box">
             <p className="home-hero-tagline">
-              "The future of your business depends on the AI systems you build today."
+              "The work your team is doing manually today — AI can handle it better."
             </p>
           </div>
         </div>
@@ -32,7 +32,7 @@ export default function Home() {
           <div className="home-intro">
             <div>
               <h2 className="home-intro-headline">
-                AI Engineer building systems that actually run in production.
+                Your team's time is your most expensive resource. Let's spend it better.
               </h2>
               <a href="mailto:muhammadbkamran@gmail.com" className="btn btn-primary">
                 Book a Conversation
@@ -40,14 +40,15 @@ export default function Home() {
             </div>
             <div>
               <p className="home-intro-bio">
-                I'm Muhammad Bin Kamran — an AI Engineer specializing in systems that eliminate
-                manual work and scale with your business. Not demos. Not prototypes. Production AI
-                that runs on day one, monitored, documented, and built to last.
+                Most businesses have a gap between what their team spends time on and what actually
+                grows the business. Manual data entry, repetitive queries, waiting on reports —
+                these aren't just inefficiencies. They're costs that compound every single day.
               </p>
               <p className="home-intro-bio">
-                Over 3+ years I've built enterprise RAG systems, agentic workflow automations, and
-                voice AI tools for clients across banking, government, and manufacturing — each
-                delivering measurable cost savings and productivity gains.
+                I'm Muhammad Bin Kamran. I work with businesses to close that gap — building AI
+                systems that take over the repetitive work, so your team can focus on decisions
+                only humans can make. The result isn't just saved time. It's a team that handles
+                more, without adding headcount.
               </p>
               <Link to="/about" className="btn" style={{ marginTop: '1.5rem' }}>
                 Learn More
@@ -71,11 +72,11 @@ export default function Home() {
             </div>
             <div className="credibility-item">
               <div className="credibility-stat">10+</div>
-              <div className="credibility-label">AI systems in<br />production</div>
+              <div className="credibility-label">AI systems running<br />in production</div>
             </div>
             <div className="credibility-item">
               <div className="credibility-stat">3+</div>
-              <div className="credibility-label">Years building<br />enterprise AI</div>
+              <div className="credibility-label">Years of enterprise<br />AI deployments</div>
             </div>
           </div>
         </div>
@@ -94,23 +95,24 @@ export default function Home() {
               />
             </div>
             <div>
-              <span className="identity-eyebrow">Engineering Philosophy</span>
+              <span className="identity-eyebrow">The Real Problem</span>
               <h2 className="identity-title">
-                The Engineer Behind Enterprise AI
+                Most AI Projects Fail Before They Start
               </h2>
               <p className="identity-text">
-                Most AI projects fail not because the model was wrong, but because the system
-                wasn't built to survive production. I've spent 3+ years studying exactly how
-                enterprise AI breaks down — and building systems that don't.
+                The issue isn't the technology. It's that most AI projects are built to impress
+                in demos — not to survive in production. Real business data is messy. Edge cases
+                appear on day two. The system that worked in testing quietly breaks when your team
+                actually tries to use it.
               </p>
               <p className="identity-text">
-                Every system I deliver is tested under load, documented for handoff, and monitored
-                in production. I care about latency, reliability, and cost-per-query as much as I
-                care about model accuracy. Because a great demo that fails at scale isn't a
-                system — it's a liability.
+                That gap — between a promising demo and something that actually runs — is exactly
+                where most AI investments go to die. Every system I deliver is stress-tested on
+                your actual data, built around your actual workflows, and monitored after launch.
+                You get something that works, not something that looked good in a slide deck.
               </p>
               <Link to="/case-studies" className="btn" style={{ marginTop: '0.5rem' }}>
-                See My Work
+                See Real Results
               </Link>
             </div>
           </div>
@@ -122,24 +124,24 @@ export default function Home() {
         <div className="container">
           <div className="identity-section">
             <div>
-              <span className="identity-eyebrow">Track Record</span>
+              <span className="identity-eyebrow">What Changes</span>
               <h2 className="identity-title">
-                Trusted Across Banking, Government, and Manufacturing
+                What Your Business Looks Like on the Other Side
               </h2>
               <p className="identity-text">
-                Clients come to me when they've outgrown spreadsheets and manual processes. A
-                banking team in the Middle East cut their query resolution time by 65%. A
-                government institution gave non-technical staff direct access to their own data —
-                in Urdu and English, by voice.
+                A bank's support team that was answering the same questions 200 times a day now
+                handles 65% more queries — without adding a single person. A government
+                department where staff used to wait days for data reports now pulls their own
+                data by voice, in Urdu or English, in seconds.
               </p>
               <p className="identity-text">
-                A manufacturing company reduced a 3-day purchase order cycle to under 4 hours —
-                with zero data entry errors since deployment. Each engagement is different, but
-                the outcome is always the same: your team does more, with less effort, and the
-                system runs itself.
+                A manufacturing company's purchase order cycle that used to take 3 days now
+                completes in under 4 hours — automatically, with zero errors. Each situation is
+                different, but the outcome is always the same: your team does more with what
+                they already have.
               </p>
               <Link to="/about" className="btn" style={{ marginTop: '0.5rem' }}>
-                About Me
+                My Story
               </Link>
             </div>
             <div>
@@ -155,9 +157,9 @@ export default function Home() {
       </section>
 
       <CTASection
-        eyebrow="Ready to get started?"
-        title={<>Let's Eliminate Your<br />Most Expensive Manual Process.</>}
-        description="Tell me what's slowing your team down. I'll tell you what's possible — and how fast we can get there."
+        eyebrow="Ready?"
+        title={<>What's the Most Expensive Thing<br />Your Team Does Manually?</>}
+        description="That's usually where we start. Book a 30-minute conversation and we'll map out what's possible — and how quickly we can get you there."
       />
     </>
   )
