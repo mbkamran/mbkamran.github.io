@@ -4,396 +4,277 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Bin Kamran | AI Chatbot Developer & LLM Engineer</title>
-    <meta name="description"
-        content="Associate Data Scientist and AI Engineer specializing in LLMs, RAG systems, and Agentic workflows.">
+    <title>Muhammad Bin Kamran | Enterprise AI Automation Expert</title>
+    <meta name="description" content="I help businesses eliminate manual work, reduce operational costs, and scale intelligently through enterprise-grade AI automation systems.">
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Background Animation -->
     <div class="stars"></div>
 
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container nav-content">
-            <a href="#" class="logo">MBK.</a>
+            <a href="index.html" class="logo">MBK.</a>
             <ul class="nav-links">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="newsletter.html" class="nav-link">Newsletter</a></li>
+                <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
             </ul>
-            <div class="nav-icons">
-                <a href="mailto:muhammadbkamran@gmail.com" class="nav-icon"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://linkedin.com/in/muhammad-bin-kamran" target="_blank" class="nav-icon"><i
-                        class="fa-brands fa-linkedin"></i></a>
-            </div>
+            <a href="mailto:muhammadbkamran@gmail.com" class="btn btn-primary nav-cta">Book a Conversation</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-content">
-            <p class="hero-greeting">Hi, my name is</p>
-            <h1 class="hero-title">Muhammad Bin Kamran.</h1>
-            <h2 class="hero-subtitle">I build Enterprise-Grade AI Systems.</h2>
-            <p class="hero-description">
-                I help businesses deploy scalable, agentic, multi-channel AI solutions—from RAG chatbots to voice
-                agents, workflow automations, and enterprise LLM applications.
-            </p>
-            <a href="#projects" class="btn btn-primary">Check out my work!</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
+    <!-- Hero -->
+    <section class="home-hero">
         <div class="container">
-            <h2>About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>
-                        I am an Associate Data Scientist at Addo AI with over 3 years of experience in LLMs, NLP, RAG,
-                        multi-agent systems, and Computer Vision. I specialize in building AI that is reliable, fast,
-                        and production-ready.
+            <div class="home-hero-inner">
+                <div class="home-hero-text">
+                    <span class="hero-eyebrow">AI Engineer &amp; Automation Expert</span>
+                    <h1 class="home-hero-heading">
+                        <span class="line-1">Enterprise AI</span>
+                        <span class="line-2">Automation</span>
+                        <span class="line-3">That Delivers.</span>
+                    </h1>
+                    <p class="home-hero-tagline">
+                        I help businesses eliminate manual work, reduce operational costs by up to 40%, and scale intelligently — through production-ready AI systems that run reliably from day one.
                     </p>
-                    <p>
-                        My expertise lies in transforming complex requirements into robust, profit-generating AI
-                        solutions. Whether it's a HIPAA-compliant medical assistant or a real-time computer vision
-                        system for edge devices, I deliver enterprise-grade quality.
-                    </p>
-                    <p>Here are a few technologies I've been working with recently:</p>
-                    <ul class="project-tech" style="margin-top: 1rem; display: grid; grid-template-columns: 1fr 1fr;">
-                        <li>▹ Python & Go</li>
-                        <li>▹ GPT-5 / Claude / Gemini</li>
-                        <li>▹ LangChain & LangGraph</li>
-                        <li>▹ AWS / Azure / GCP</li>
-                        <li>▹ Docker & Kubernetes</li>
-                        <li>▹ PyTorch & TensorFlow</li>
-                    </ul>
-                </div>
-                <div class="about-img-wrapper">
-                    <!-- Placeholder for profile image, user to provide later -->
-                    <img src="assets/images/profile-placeholder.jpg" alt="Muhammad Bin Kamran" class="about-img"
-                        style="background: #112240; min-height: 300px; display: flex; align-items: center; justify-content: center; color: #8892b0; text-align: center;"
-                        onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'height:300px; background:#112240; display:flex; align-items:center; justify-content:center; color:#64ffda\'>Profile Image Placeholder</div>'">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <h2>Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
-                    <h3 class="service-title">AI Chatbots & Agents</h3>
-                    <p class="service-desc">
-                        GPT-5/Claude/Gemini-based chatbots, Voice Agents (VAPI, ElevenLabs), and Multi-Agent Workflows
-                        using LangChain & LangGraph.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-database"></i></div>
-                    <h3 class="service-title">Enterprise RAG Systems</h3>
-                    <p class="service-desc">
-                        Custom knowledge bases (Pinecone, ChromaDB), industry-tuned retrieval pipelines, and
-                        hallucination reduction. HIPAA/GDPR compliant.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-bolt"></i></div>
-                    <h3 class="service-title">AI Automations</h3>
-                    <p class="service-desc">
-                        Full workflow automation using N8N, Make.com, Zapier. Tool-using agents and API automation for
-                        seamless business integration.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div>
-                    <h3 class="service-title">Edge + Cloud AI</h3>
-                    <p class="service-desc">
-                        iOS/Android optimized inference (CoreML, TensorRT), Real-time CV/NLP models, and scalable Cloud
-                        deployment (AWS, Azure, GCP).
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <div class="container">
-            <h2>Where I've Worked</h2>
-            <div class="timeline">
-                <!-- Addo AI -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Apr 2025 - Present</div>
-                    <h3 class="timeline-title">Associate Data Scientist <span class="timeline-company">@ Addo AI</span>
-                    </h3>
-                    <div class="timeline-desc">
-                        <ul>
-                            <li>Designed Agentic Text-to-SQL system using Claude with Urdu/English voice/text input for
-                                government institution, reducing operational costs by over 40%.</li>
-                            <li>Built Knowledge-Retrieval Chatbot with Azure Cloud infrastructure for a Big Four bank,
-                                increasing query resolution efficiency by 65%.</li>
-                        </ul>
+                    <div class="hero-cta-group">
+                        <a href="mailto:muhammadbkamran@gmail.com" class="btn btn-primary">Book a Conversation</a>
+                        <a href="case-studies.html" class="btn">View Case Studies</a>
                     </div>
                 </div>
-                <!-- CenturionVR -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Aug 2024 - Mar 2025</div>
-                    <h3 class="timeline-title">Machine Learning Engineer <span class="timeline-company">@
-                            CenturionVR</span></h3>
-                    <div class="timeline-desc">
-                        <ul>
-                            <li>Implemented 3D Human Pose detection solution with monocular camera using YOLO for
-                                VR-less motion-detection game.</li>
-                            <li>Achieved 30fps processing speed with 90% accuracy on edge devices including Android and
-                                Apple devices.</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Solutyics -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Mar 2023 - Aug 2024</div>
-                    <h3 class="timeline-title">Machine Learning Engineer <span class="timeline-company">@
-                            Solutyics</span></h3>
-                    <div class="timeline-desc">
-                        <ul>
-                            <li>Created a Developer-Debugging Chatbot solution using custom finetuned T5, reducing
-                                debugging time by 50%.</li>
-                            <li>Implemented YOLO-based customer activity tracking system for major superstore to
-                                recognize customer patterns.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="folder-icon"><i class="fa-regular fa-folder"></i></div>
-                        <div class="project-links">
-                            <i class="fa-brands fa-github" title="Source Code Available"></i>
+                <div class="home-hero-photo">
+                    <div class="profile-photo-wrap">
+                        <!--
+                            IMAGE PLACEHOLDER
+                            Upload: Professional headshot or upper-body portrait.
+                            Style: Well-lit, neutral or dark background, business-casual or smart attire.
+                            Recommended size: 600×750px or taller (portrait orientation).
+                            File: assets/images/profile.jpg
+                            Then replace this div with: <img src="assets/images/profile.jpg" alt="Muhammad Bin Kamran" class="profile-photo">
+                        -->
+                        <div class="img-placeholder" style="min-height: 520px; border-radius: 12px;">
+                            <i class="fa-regular fa-circle-user"></i>
+                            <p class="img-placeholder-label">Profile Photo</p>
+                            <p class="img-placeholder-hint">Upload: professional headshot, upper-body, well-lit, dark or neutral background (600×750px)</p>
                         </div>
                     </div>
-                    <h3 class="project-title">Agentic Text-To-SQL System</h3>
-                    <p class="project-desc">
-                        RAG-based Agentic Chatbot for Urdu & English. Uses Claude Sonnet 3.7 for SQL generation and
-                        Facebook MMS for Urdu TTS. Deployed via Docker/FastAPI.
-                    </p>
-                    <ul class="project-tech">
-                        <li>Claude 3.7</li>
-                        <li>LangGraph</li>
-                        <li>ClickHouse</li>
-                        <li>FastAPI</li>
-                    </ul>
-                </div>
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="folder-icon"><i class="fa-regular fa-folder"></i></div>
-                        <div class="project-links">
-                            <i class="fa-brands fa-github" title="Source Code Available"></i>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Knowledge-Retrieval Chatbot</h3>
-                    <p class="project-desc">
-                        Enterprise-grade RAG chatbot for banking workflows. Utilizes GPT-4.5 Mini, Azure AI Search, and
-                        Databricks for scalable document ingestion.
-                    </p>
-                    <ul class="project-tech">
-                        <li>Azure AI</li>
-                        <li>GPT-4.5</li>
-                        <li>LangChain</li>
-                        <li>Databricks</li>
-                    </ul>
-                </div>
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="folder-icon"><i class="fa-regular fa-folder"></i></div>
-                        <div class="project-links">
-                            <i class="fa-brands fa-github" title="Source Code Available"></i>
-                        </div>
-                    </div>
-                    <h3 class="project-title">3D Pose Estimation & Bat Tracking</h3>
-                    <p class="project-desc">
-                        Multi-Stage ML architecture combining Mediapipe and YOLO11n for 3D pose detection. Deployed on
-                        Unity/C# for edge devices.
-                    </p>
-                    <ul class="project-tech">
-                        <li>YOLO11n</li>
-                        <li>Unity</li>
-                        <li>ONNX</li>
-                        <li>OpenCV</li>
-                    </ul>
-                </div>
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="folder-icon"><i class="fa-regular fa-folder"></i></div>
-                        <div class="project-links">
-                            <i class="fa-brands fa-github" title="Source Code Available"></i>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Medical RAG Assistant</h3>
-                    <p class="project-desc">
-                        HIPAA-Compliant Healthcare Assistant. GPT-5 + LangChain RAG agent integrated with EHR.
-                        Voice-enabled symptom triage.
-                    </p>
-                    <ul class="project-tech">
-                        <li>GPT-5</li>
-                        <li>Pinecone</li>
-                        <li>FastAPI</li>
-                        <li>ElevenLabs</li>
-                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Prototype Section -->
-    <section id="portfolio">
+    <!-- Credibility Strip -->
+    <section class="credibility-strip">
         <div class="container">
-            <h2>Portfolio</h2>
-            <div class="portfolio-showcase">
-                <div class="portfolio-content-wrapper">
-                    <div class="portfolio-info">
-                        <h3 style="margin-bottom: 1rem; color: var(--accent-color);">Autonomous Research Agent</h3>
-                        <p class="hero-description" style="margin-bottom: 2rem;">
-                            Imagine an AI that doesn't just answer questions, but conducts deep, multi-step research for
-                            you.
-                            <br><br>
-                            This prototype demonstrates a fully autonomous agentic workflow that gathers, synthesizes,
-                            and reports on complex topics in real-time. It's designed to save hours of manual research
-                            time for professionals.
-                        </p>
-                        <ul class="project-tech" style="margin-bottom: 2rem; display: block;">
-                            <li style="margin-bottom: 0.5rem;">▹ Deep Web Research</li>
-                            <li style="margin-bottom: 0.5rem;">▹ Real-time Synthesis</li>
-                            <li style="margin-bottom: 0.5rem;">▹ Comprehensive Reporting</li>
-                        </ul>
-                        <a href="https://agentresearcher.vercel.app/" target="_blank" class="btn btn-primary">
-                            <i class="fa-solid fa-external-link-alt"></i> Try Live Prototype
-                        </a>
+            <div class="credibility-grid">
+                <div class="credibility-item">
+                    <div class="credibility-stat">3+</div>
+                    <div class="credibility-label">Years Building<br>Production AI Systems</div>
+                </div>
+                <div class="credibility-item">
+                    <div class="credibility-stat">40%</div>
+                    <div class="credibility-label">Average Operational<br>Cost Reduction</div>
+                </div>
+                <div class="credibility-item">
+                    <div class="credibility-stat">10+</div>
+                    <div class="credibility-label">Enterprise AI<br>Systems Deployed</div>
+                </div>
+                <div class="credibility-item">
+                    <div class="credibility-stat">65%</div>
+                    <div class="credibility-label">Average Productivity<br>Gain Delivered</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What I Do -->
+    <section>
+        <div class="container">
+            <h2>What I Do</h2>
+            <div class="role-cards-grid">
+                <!-- Card 1 -->
+                <div class="role-card">
+                    <div class="role-card-img-wrap">
+                        <!--
+                            IMAGE PLACEHOLDER
+                            Upload: Screenshot of an N8N or Make.com workflow diagram, or an automation dashboard.
+                            File: assets/images/service-automation.png
+                        -->
+                        <div class="img-placeholder">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            <p class="img-placeholder-label">AI Workflow Automation Screenshot</p>
+                            <p class="img-placeholder-hint">N8N / Make.com workflow diagram or automation dashboard</p>
+                        </div>
                     </div>
-                    <div class="portfolio-gallery">
-                        <img src="assets/images/prototype_1.png" alt="Researcher Agent Interface Main"
-                            class="portfolio-img">
-                        <img src="assets/images/prototype_2.png" alt="Researcher Agent Interface Detail"
-                            class="portfolio-img">
-                        <img src="assets/images/prototype_3.png" alt="Researcher Agent Interface Results"
-                            class="portfolio-img">
+                    <div class="role-card-body">
+                        <div class="role-card-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <h3 class="role-card-title">AI Workflow Automation</h3>
+                        <p class="role-card-desc">Design and deploy intelligent automation pipelines using N8N, Make.com, and LangGraph. Eliminate repetitive tasks and scale operations without scaling headcount.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="role-card">
+                    <div class="role-card-img-wrap">
+                        <!--
+                            IMAGE PLACEHOLDER
+                            Upload: Screenshot of a chatbot interface or RAG system conversation flow.
+                            File: assets/images/service-rag.png
+                        -->
+                        <div class="img-placeholder">
+                            <i class="fa-solid fa-robot"></i>
+                            <p class="img-placeholder-label">Chatbot / RAG Interface Screenshot</p>
+                            <p class="img-placeholder-hint">Enterprise chatbot UI or conversation flow diagram</p>
+                        </div>
+                    </div>
+                    <div class="role-card-body">
+                        <div class="role-card-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3 class="role-card-title">Enterprise RAG &amp; Chatbots</h3>
+                        <p class="role-card-desc">Custom knowledge bases with Pinecone and Azure AI Search. HIPAA/GDPR-compliant chatbots that answer accurately and measurably reduce support load.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="role-card">
+                    <div class="role-card-img-wrap">
+                        <!--
+                            IMAGE PLACEHOLDER
+                            Upload: Screenshot of a cloud architecture diagram, deployment dashboard, or infrastructure overview.
+                            File: assets/images/service-deployment.png
+                        -->
+                        <div class="img-placeholder">
+                            <i class="fa-solid fa-cloud"></i>
+                            <p class="img-placeholder-label">Cloud Deployment / Architecture Diagram</p>
+                            <p class="img-placeholder-hint">AWS / Azure architecture diagram or deployment dashboard</p>
+                        </div>
+                    </div>
+                    <div class="role-card-body">
+                        <div class="role-card-icon"><i class="fa-solid fa-server"></i></div>
+                        <h3 class="role-card-title">Production AI Deployment</h3>
+                        <p class="role-card-desc">End-to-end deployment on AWS, Azure, or GCP — Dockerized, monitored, and built to scale. From prototype to live system, reliably and fast.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
+    <!-- Testimonials -->
+    <section>
         <div class="container">
-            <h2>Client Testimonials</h2>
+            <h2>What Clients Say</h2>
             <div class="testimonials-grid">
-                <!-- Testimonial 1 -->
                 <div class="testimonial-card">
                     <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-                    <p class="testimonial-text">
-                        "Muhammad delivered an exceptional RAG chatbot for our banking platform. His understanding of
-                        enterprise security and retrieval accuracy is top-notch. The system he built reduced our support
-                        ticket volume significantly."
-                    </p>
-                    <div class="testimonial-author">
-                        <h4 class="author-name">Sarah Jenkins</h4>
-                        <p class="author-role">CTO, FinTech Solutions</p>
+                    <p class="testimonial-text">"Muhammad delivered an exceptional RAG chatbot for our banking platform. His understanding of enterprise security and retrieval accuracy is top-notch. The system reduced our support ticket volume significantly."</p>
+                    <div class="testimonial-author-wrap">
+                        <!--
+                            IMAGE PLACEHOLDER
+                            Upload: A professional headshot of the testimonial author (circular crop, ~100×100px).
+                            File: assets/images/testimonial-sarah.jpg
+                            Then replace the div.testimonial-avatar with:
+                            <img src="assets/images/testimonial-sarah.jpg" alt="Sarah Jenkins" class="testimonial-avatar">
+                        -->
+                        <div class="testimonial-avatar"><i class="fa-regular fa-circle-user"></i></div>
+                        <div>
+                            <h4 class="author-name">Sarah Jenkins</h4>
+                            <p class="author-role">CTO, FinTech Solutions</p>
+                        </div>
                     </div>
                 </div>
-                <!-- Testimonial 2 -->
                 <div class="testimonial-card">
                     <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-                    <p class="testimonial-text">
-                        "Working with Muhammad on our medical AI assistant was a breeze. He navigated the complex HIPAA
-                        requirements effortlessly and delivered a highly responsive voice agent that our doctors love
-                        using."
-                    </p>
-                    <div class="testimonial-author">
-                        <h4 class="author-name">Dr. James Chen</h4>
-                        <p class="author-role">Director, Med Innovations</p>
+                    <p class="testimonial-text">"Working with Muhammad on our medical AI assistant was a breeze. He navigated the complex HIPAA requirements effortlessly and delivered a highly responsive voice agent that our doctors love using."</p>
+                    <div class="testimonial-author-wrap">
+                        <div class="testimonial-avatar"><i class="fa-regular fa-circle-user"></i></div>
+                        <div>
+                            <h4 class="author-name">Dr. James Chen</h4>
+                            <p class="author-role">Director, Med Innovations</p>
+                        </div>
                     </div>
                 </div>
-                <!-- Testimonial 3 -->
                 <div class="testimonial-card">
                     <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-                    <p class="testimonial-text">
-                        "The autonomous research agent Muhammad built for us is a game-changer. It automates hours of
-                        manual work. His expertise in multi-agent systems is truly impressive."
-                    </p>
-                    <div class="testimonial-author">
-                        <h4 class="author-name">Elena Rodriguez</h4>
-                        <p class="author-role">Head of Research, DataCorp</p>
+                    <p class="testimonial-text">"The autonomous research agent Muhammad built for us is a game-changer. It automates hours of manual work every day. His expertise in multi-agent systems is truly impressive."</p>
+                    <div class="testimonial-author-wrap">
+                        <div class="testimonial-avatar"><i class="fa-regular fa-circle-user"></i></div>
+                        <div>
+                            <h4 class="author-name">Elena Rodriguez</h4>
+                            <p class="author-role">Head of Research, DataCorp</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <!-- CTA -->
+    <section class="cta-section">
         <div class="container">
-            <p class="hero-greeting">Ready to Scale?</p>
-            <h2 class="contact-title">Let's Build Something Extraordinary.</h2>
-            <p class="contact-desc">
-                I help businesses transform ideas into production-ready AI solutions. If you're looking to integrate
-                cutting-edge LLMs or Agentic workflows into your product, let's talk.
-            </p>
-            <a href="mailto:muhammadbkamran@gmail.com" class="btn btn-primary"
-                style="font-size: 1.1rem; padding: 1rem 2rem;">Shoot me an email</a>
-
-            <div class="social-links-footer">
-                <a href="https://github.com/mbkamran" target="_blank" class="social-icon-footer"><i
-                        class="fa-brands fa-github"></i></a>
-                <a href="https://linkedin.com/in/muhammad-bin-kamran" target="_blank" class="social-icon-footer"><i
-                        class="fa-brands fa-linkedin"></i></a>
-            </div>
+            <span class="cta-eyebrow">Ready to automate?</span>
+            <h2 class="cta-title">Let's Build Something<br>That Actually Works.</h2>
+            <p class="cta-desc">If your team is spending time on tasks AI could handle — let's talk. I build systems that deliver measurable ROI, not demos.</p>
+            <a href="mailto:muhammadbkamran@gmail.com" class="btn btn-primary" style="font-size: 1rem; padding: 0.9rem 2.2rem;">Book a Conversation</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="site-footer">
         <div class="container">
-            <p>Designed & Built by Muhammad Bin Kamran</p>
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="footer-logo">MBK.</a>
+                    <p class="footer-desc">AI Engineer & Automation Expert helping businesses eliminate manual work and scale intelligently through production-ready AI systems.</p>
+                </div>
+                <div>
+                    <h4 class="footer-col-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-col-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="case-studies.html">AI Workflow Automation</a></li>
+                        <li><a href="case-studies.html">Enterprise RAG Systems</a></li>
+                        <li><a href="case-studies.html">AI Chatbots &amp; Agents</a></li>
+                        <li><a href="case-studies.html">Edge + Cloud Deployment</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-col-title">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:muhammadbkamran@gmail.com">muhammadbkamran@gmail.com</a></li>
+                        <li><a href="https://linkedin.com/in/muhammad-bin-kamran" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/mbkamran" target="_blank">GitHub</a></li>
+                        <li><span>Lahore, Pakistan</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Muhammad Bin Kamran. All rights reserved.</p>
+                <div class="footer-social-links">
+                    <a href="https://github.com/mbkamran" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/muhammad-bin-kamran" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:muhammadbkamran@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="js/main.js"></script>
 </body>
 
