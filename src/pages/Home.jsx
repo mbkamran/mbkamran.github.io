@@ -8,14 +8,7 @@ export default function Home() {
       {/* Full-viewport hero with photo overlay */}
       <section className="home-hero">
         <div className="home-hero-bg">
-          <ImagePlaceholder
-            icon="fa-regular fa-circle-user"
-            label="Full-Width Professional Portrait"
-            hint="Upload a high-resolution portrait (1600×900px or taller). This fills the entire screen."
-          />
-          {/* Replace ImagePlaceholder with:
-              <img src="/assets/images/hero-bg.jpg" alt="Muhammad Bin Kamran" />
-              once the photo is ready */}
+          <img src="/assets/images/home-hero-portrait.jpg" alt="Muhammad Bin Kamran" />
         </div>
         <div className="container">
           <div className="home-hero-text-box">

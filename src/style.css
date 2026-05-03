@@ -293,6 +293,7 @@ section {
 .home-hero-text-box {
     max-width: 520px;
     margin-bottom: 5rem;
+    margin-left: -2rem;
     padding: 2.5rem 3rem;
     background: rgba(15, 10, 5, 0.42);
     backdrop-filter: blur(6px);
@@ -939,11 +940,24 @@ section {
     margin-top: 2rem;
 }
 
+
+.cs-lesson {
+    background: rgba(184, 92, 68, 0.05);
+    border-left: 3px solid rgba(184, 92, 68, 0.3);
+    padding: 1.2rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin: 0 0 1.75rem;
+    font-style: italic;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    line-height: 1.75;
+}
+
 .case-study {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
-    align-items: center;
+    align-items: start;
     padding: 5.5rem 0;
     border-bottom: 1px solid var(--card-border);
 }
@@ -954,6 +968,13 @@ section {
 
 .case-study:last-child {
     border-bottom: none;
+}
+
+.case-study-image-col {
+    padding-top: 2.2rem;
+    position: sticky;
+    top: 5.5rem;
+    align-self: start;
 }
 
 .case-study-img-placeholder {
