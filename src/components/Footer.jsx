@@ -8,7 +8,8 @@ export default function Footer() {
           <div>
             <Link to="/" className="footer-logo">MBK.</Link>
             <p className="footer-desc">
-              AI Engineer &amp; Automation Expert helping businesses eliminate manual work and
+              AI Automation Consultant<br />
+              helping businesses eliminate manual work and
               scale intelligently through production-ready AI systems.
             </p>
           </div>

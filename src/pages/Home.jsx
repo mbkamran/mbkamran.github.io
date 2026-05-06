@@ -25,23 +25,25 @@ export default function Home() {
           <div className="home-intro">
             <div>
               <h2 className="home-intro-headline">
-                Your team's time is your most expensive resource. Let's spend it better.
+                Your team's time is your most expensive resource. Most of it goes to work that shouldn't need them.
               </h2>
               <a href="mailto:muhammadbkamran@gmail.com" className="btn btn-primary">
-                Book a Conversation
+                Contact
               </a>
             </div>
             <div>
               <p className="home-intro-bio">
-                Most businesses have a gap between what their team spends time on and what actually
-                grows the business. Manual data entry, repetitive queries, waiting on reports —
-                these aren't just inefficiencies. They're costs that compound every single day.
+                In almost every organisation, there's a gap between what the team spends their day
+                on and what actually moves the business forward. Manual data entry, repetitive
+                queries, waiting on reports — these aren't just inefficiencies. They're costs that
+                compound quietly, every single day.
               </p>
               <p className="home-intro-bio">
-                I'm Muhammad Bin Kamran. I work with businesses to close that gap — building AI
-                systems that take over the repetitive work, so your team can focus on decisions
-                only humans can make. The result isn't just saved time. It's a team that handles
-                more, without adding headcount.
+                I'm Muhammad, and over several years working with businesses across banking,
+                government, and manufacturing, I've watched this same pattern repeat itself. The
+                work consuming most of the team's day is almost never the work that actually needs
+                them. When the right system takes it over, the team doesn't just get faster —
+                they get their job back.
               </p>
               <Link to="/about" className="btn" style={{ marginTop: '1.5rem' }}>
                 Learn More
@@ -93,16 +95,16 @@ export default function Home() {
                 Most AI Projects Fail Before They Start
               </h2>
               <p className="identity-text">
-                The issue isn't the technology. It's that most AI projects are built to impress
-                in demos — not to survive in production. Real business data is messy. Edge cases
-                appear on day two. The system that worked in testing quietly breaks when your team
-                actually tries to use it.
+                The issue is rarely the technology. Most AI projects are built to impress in
+                demos — not to survive in production. Real business data is messy. The edge
+                cases that don't show up in testing show up on day two. The system that looked
+                impressive in the pilot quietly breaks when the team actually tries to use it.
               </p>
               <p className="identity-text">
-                That gap — between a promising demo and something that actually runs — is exactly
-                where most AI investments go to die. Every system I deliver is stress-tested on
-                your actual data, built around your actual workflows, and monitored after launch.
-                You get something that works, not something that looked good in a slide deck.
+                That gap — between a promising demo and something that actually runs — is where
+                most AI investments go to die. The ones that survive have one thing in common:
+                they were designed around how the business actually operates, not how it looked
+                in a requirements document. That distinction is everything.
               </p>
               <Link to="/case-studies" className="btn" style={{ marginTop: '0.5rem' }}>
                 See Real Results
@@ -152,7 +154,7 @@ export default function Home() {
       <CTASection
         eyebrow="Ready?"
         title={<>What's the Most Expensive Thing<br />Your Team Does Manually?</>}
-        description="That's usually where we start. Book a 30-minute conversation and we'll map out what's possible — and how quickly we can get you there."
+        description="That's usually the highest-leverage place to start. If you can name the task, you've already identified the opportunity."
       />
     </>
   )

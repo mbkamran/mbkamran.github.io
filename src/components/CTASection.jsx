@@ -10,7 +10,7 @@ export default function CTASection({ eyebrow, title, description }) {
           className="btn btn-primary"
           style={{ fontSize: '1rem', padding: '0.9rem 2.2rem' }}
         >
-          Book a Conversation
+          Contact
         </a>
       </div>
     </section>

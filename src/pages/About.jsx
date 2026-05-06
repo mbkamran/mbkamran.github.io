@@ -16,19 +16,19 @@ export default function About() {
               </h1>
               <p className="about-hero-desc">
                 Working across banking, government, and manufacturing, I kept seeing the same
-                thing: talented teams spending the majority of their day on work that a
-                well-built system could handle faster, cheaper, and without errors. Not because
-                they lacked capability — because the right system didn't exist yet.
+                pattern: talented teams spending the majority of their day on work that a
+                well-designed system could handle faster, cheaper, and without errors. Not
+                because they lacked capability — because the right system didn't exist yet.
               </p>
               <p className="about-hero-desc">
-                That's the gap I fill. Not with prototypes or proofs of concept, but with
-                production AI systems that run on your data, within your workflows, from day
-                one — so your team can stop managing the process and start focusing on the
-                work only they can do.
+                That gap is almost always solvable. Not with a prototype built to impress in
+                a meeting, but with something that fits into how the team already works — a
+                system they don't have to manage. When that happens, the shift isn't just
+                efficiency. It's the team finally doing what they were actually hired to do.
               </p>
               <div className="hero-cta-group">
                 <Link to="/case-studies" className="btn btn-primary">See the Results</Link>
-                <a href="mailto:muhammadbkamran@gmail.com" className="btn">Start a Conversation</a>
+                <a href="mailto:muhammadbkamran@gmail.com" className="btn">Get in Touch</a>
               </div>
             </div>
             <div className="about-hero-right">
@@ -63,9 +63,8 @@ export default function About() {
               </p>
               <p>
                 In every case, the constraint wasn't the people. It was the absence of a system
-                that worked for them. That's what I build — AI that quietly takes over the work
-                that was slowing everything down, so the people doing that work can finally
-                focus on what they were hired to do in the first place.
+                that worked for them. And in every case, once the right system was in place,
+                the team didn't change — but what they were capable of did.
               </p>
             </div>
             <div className="story-photo">
@@ -100,7 +99,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Testimonials — hidden until verified names/details are available
       <section>
         <div className="container">
           <span className="about-eyebrow">What Clients Say</span>
@@ -114,16 +113,13 @@ export default function About() {
                 delivered something our team actually uses and trusts every day."
               </p>
               <div className="testimonial-author-wrap">
-                <div className="testimonial-avatar">
-                  <i className="fa-regular fa-circle-user" />
-                </div>
+                <div className="testimonial-avatar"><i className="fa-regular fa-circle-user" /></div>
                 <div>
                   <div className="author-name">Operations Director</div>
                   <div className="author-role">Manufacturing Company</div>
                 </div>
               </div>
             </div>
-
             <div className="testimonial-card">
               <div className="quote-icon"><i className="fa-solid fa-quote-left" /></div>
               <p className="testimonial-text">
@@ -132,16 +128,13 @@ export default function About() {
                 dropped by 90%. The ROI was visible within the first month."
               </p>
               <div className="testimonial-author-wrap">
-                <div className="testimonial-avatar">
-                  <i className="fa-regular fa-circle-user" />
-                </div>
+                <div className="testimonial-avatar"><i className="fa-regular fa-circle-user" /></div>
                 <div>
                   <div className="author-name">Head of Operations</div>
                   <div className="author-role">Big Four Bank</div>
                 </div>
               </div>
             </div>
-
             <div className="testimonial-card">
               <div className="quote-icon"><i className="fa-solid fa-quote-left" /></div>
               <p className="testimonial-text">
@@ -150,9 +143,7 @@ export default function About() {
                 before we could fully articulate it, and the system he built reflects that."
               </p>
               <div className="testimonial-author-wrap">
-                <div className="testimonial-avatar">
-                  <i className="fa-regular fa-circle-user" />
-                </div>
+                <div className="testimonial-avatar"><i className="fa-regular fa-circle-user" /></div>
                 <div>
                   <div className="author-name">Director of Technology</div>
                   <div className="author-role">Government Institution</div>
@@ -162,11 +153,56 @@ export default function About() {
           </div>
         </div>
       </section>
+      */}
+
+      {/* Patterns from the Field */}
+      <section>
+        <div className="container">
+          <span className="about-eyebrow">What the Work Has Taught Me</span>
+          <h2>Patterns That Show Up Everywhere</h2>
+          <div className="insights-grid">
+
+            <div className="insight-card">
+              <div className="insight-icon"><i className="fa-solid fa-magnifying-glass" /></div>
+              <h3 className="insight-title">The bottleneck is rarely where the team thinks it is</h3>
+              <p className="insight-text">
+                Most organisations can identify the symptom — slow turnaround, mounting backlogs,
+                overloaded staff. The actual constraint is almost always upstream: a gap between
+                where data lives and where the system expects it to be. Fix that gap, and the
+                symptom resolves itself.
+              </p>
+            </div>
+
+            <div className="insight-card">
+              <div className="insight-icon"><i className="fa-solid fa-users" /></div>
+              <h3 className="insight-title">Adoption beats accuracy every time</h3>
+              <p className="insight-text">
+                A system that fits naturally into the team's existing workflow will outperform
+                a more accurate one that requires a behaviour change. The most technically
+                impressive AI solution is worthless if it adds friction. The only measure that
+                matters is whether the team uses it tomorrow without being asked.
+              </p>
+            </div>
+
+            <div className="insight-card">
+              <div className="insight-icon"><i className="fa-solid fa-rotate" /></div>
+              <h3 className="insight-title">Start with the repetitive, not the complex</h3>
+              <p className="insight-text">
+                The highest-ROI applications of AI are rarely the impressive-sounding ones.
+                They're the tasks done 50 times a day that nobody questions — data entry,
+                document lookups, routine reporting. Automating one of those compounds
+                faster than any ambitious use case.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
 
       <CTASection
         eyebrow="Let's talk"
-        title={<>Find the Work That<br />Shouldn't Need Your Team.</>}
-        description="Every engagement starts with a single conversation about where your team's time is going. Most of the time, the biggest opportunity is hiding in plain sight."
+        title={<>The Biggest Opportunity Is Usually<br />the Most Obvious One.</>}
+        description="It's almost always the task everyone does every day without questioning it. That's where the leverage is."
       />
     </>
   )

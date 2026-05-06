@@ -327,9 +327,9 @@ export default function CaseStudies() {
       </section>
 
       <CTASection
-        eyebrow="Have a similar challenge?"
-        title={<>Let's Build Your<br />Business Case for AI.</>}
-        description="Every project starts with a conversation. Tell me what's slowing your team down and I'll tell you what's possible — and how fast we can get there."
+        eyebrow="See a pattern you recognise?"
+        title={<>The Situation Is Usually<br />More Familiar Than It Looks.</>}
+        description="Every one of these started with a team doing something manually that they assumed couldn't be automated. It almost always can."
       />
     </>
   )
