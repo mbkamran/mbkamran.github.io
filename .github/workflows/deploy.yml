@@ -12,6 +12,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # needed to compare HEAD~1 for new post detection
 
       - uses: actions/setup-node@v4
         with:
@@ -22,6 +24,9 @@ jobs:
         run: npm ci
 
       - name: Build
+        env:
+          VITE_BREVO_API: ${{ secrets.VITE_BREVO_API }}
+          VITE_BREVO_LIST_ID: ${{ secrets.VITE_BREVO_LIST_ID }}
         run: npm run build
 
       - name: Deploy to gh-pages branch
@@ -29,3 +34,61 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+
+      - name: Detect new blog post
+        id: detect
+        run: |
+          CHANGED=$(git diff --name-only HEAD~1 HEAD 2>/dev/null \
+            | grep -E 'src/pages/(Newsletter\.jsx|blog/Post)' || true)
+          if [ -n "$CHANGED" ]; then
+            echo "has_new_post=true" >> $GITHUB_OUTPUT
+            echo "Detected new/updated post in: $CHANGED"
+          else
+            echo "has_new_post=false" >> $GITHUB_OUTPUT
+            echo "No new posts detected."
+          fi
+
+      - name: Notify subscribers via Brevo
+        if: steps.detect.outputs.has_new_post == 'true'
+        env:
+          BREVO_API: ${{ secrets.VITE_BREVO_API }}
+          BREVO_LIST_ID: ${{ secrets.VITE_BREVO_LIST_ID }}
+        run: |
+          EMAIL_HTML='<html><body style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:2rem;color:#1c1917">
+            <h2 style="color:#1c1917">New article on The AI Automation Brief</h2>
+            <p>A new post has just been published. Head over to read it:</p>
+            <a href="https://mbkamran.github.io/newsletter"
+               style="display:inline-block;background:#b85c44;color:#fff;padding:0.75rem 1.75rem;border-radius:100px;text-decoration:none;font-weight:600;margin:1rem 0">
+              Read the Latest Post
+            </a>
+            <p style="color:#78716c;font-size:0.85rem;margin-top:2rem;border-top:1px solid #e7e5e4;padding-top:1rem">
+              You are receiving this because you subscribed at mbkamran.github.io.<br>
+              Reply to this email to unsubscribe.
+            </p>
+          </body></html>'
+
+          RESPONSE=$(curl -s -X POST "https://api.brevo.com/v3/emailCampaigns" \
+            -H "api-key: $BREVO_API" \
+            -H "content-type: application/json" \
+            -d "{
+              \"name\": \"New Post - $(date +%Y-%m-%d)\",
+              \"subject\": \"New article on The AI Automation Brief\",
+              \"sender\": {
+                \"name\": \"Muhammad Bin Kamran\",
+                \"email\": \"muhammadbkamran@gmail.com\"
+              },
+              \"type\": \"classic\",
+              \"htmlContent\": $(echo "$EMAIL_HTML" | jq -Rs .),
+              \"recipients\": {\"listIds\": [$BREVO_LIST_ID]}
+            }")
+
+          CAMPAIGN_ID=$(echo "$RESPONSE" | jq -r '.id // empty')
+
+          if [ -n "$CAMPAIGN_ID" ]; then
+            curl -s -X POST "https://api.brevo.com/v3/emailCampaigns/$CAMPAIGN_ID/sendNow" \
+              -H "api-key: $BREVO_API"
+            echo "Notification sent — campaign ID: $CAMPAIGN_ID"
+          else
+            echo "Campaign creation failed: $RESPONSE"
+            exit 1
+          fi

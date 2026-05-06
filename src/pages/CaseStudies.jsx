@@ -1,4 +1,3 @@
-import ImagePlaceholder from '../components/ImagePlaceholder'
 import CTASection from '../components/CTASection'
 
 export default function CaseStudies() {
@@ -23,12 +22,7 @@ export default function CaseStudies() {
             {/* Case Study 1 — image left, content right */}
             <div className="case-study">
               <div className="case-study-image-col">
-                <ImagePlaceholder
-                  icon="fa-solid fa-chart-bar"
-                  label="ERPNext Report Interface"
-                  hint="Screenshot of a custom ERPNext report dashboard or report builder interface (800×600px)"
-                  className="case-study-img-placeholder"
-                />
+                <img src="/assets/images/erpnext-reporting.png" alt="ERPNext custom reporting interface" className="case-study-img-placeholder" />
               </div>
               <div className="case-study-content-col">
                 <span className="case-study-category">Workflow Automation</span>
@@ -121,24 +115,14 @@ export default function CaseStudies() {
                 </ul>
               </div>
               <div className="case-study-image-col">
-                <ImagePlaceholder
-                  icon="fa-solid fa-comments"
-                  label="Chatbot Interface Screenshot"
-                  hint="Screenshot of the chatbot UI showing a conversation, or Azure AI Search architecture diagram (800×600px)"
-                  className="case-study-img-placeholder"
-                />
+                <img src="/assets/images/banking-rag-chatbot.png" alt="Banking RAG chatbot interface" className="case-study-img-placeholder" />
               </div>
             </div>
 
             {/* Case Study 3 — image left, content right */}
             <div className="case-study">
               <div className="case-study-image-col">
-                <ImagePlaceholder
-                  icon="fa-solid fa-microphone-lines"
-                  label="Voice Interface / Query Results"
-                  hint="Screenshot of the voice interface showing a query and result, or system architecture diagram (800×600px)"
-                  className="case-study-img-placeholder"
-                />
+                <img src="/assets/images/voice-sql-government.png" alt="Voice-enabled multilingual SQL assistant" className="case-study-img-placeholder" />
               </div>
               <div className="case-study-content-col">
                 <span className="case-study-category">Voice AI</span>
@@ -229,12 +213,7 @@ export default function CaseStudies() {
                 </ul>
               </div>
               <div className="case-study-image-col">
-                <ImagePlaceholder
-                  icon="fa-solid fa-person-running"
-                  label="Gesture Detection Demo"
-                  hint="Screenshot or demo recording of the gesture-controlled game running on a phone (800×600px)"
-                  className="case-study-img-placeholder"
-                />
+                <img src="/assets/images/gesture-game.png" alt="Gesture-controlled game without VR hardware" className="case-study-img-placeholder" />
               </div>
             </div>
 
@@ -242,12 +221,7 @@ export default function CaseStudies() {
             {/* Case Study 5 — image left, content right */}
             <div className="case-study">
               <div className="case-study-image-col">
-                <ImagePlaceholder
-                  icon="fa-solid fa-file-invoice"
-                  label="Document Extraction Pipeline"
-                  hint="Diagram showing document ingestion, extraction, and output flow (800×600px)"
-                  className="case-study-img-placeholder"
-                />
+                <img src="/assets/images/invoice-extraction.png" alt="Automated invoice and contract data extraction" className="case-study-img-placeholder" />
               </div>
               <div className="case-study-content-col">
                 <span className="case-study-category">Document Intelligence</span>
@@ -344,12 +318,7 @@ export default function CaseStudies() {
                 </ul>
               </div>
               <div className="case-study-image-col">
-                <ImagePlaceholder
-                  icon="fa-solid fa-headset"
-                  label="Support Automation Dashboard"
-                  hint="Screenshot of agentic support system resolving a ticket or CRM integration diagram (800×600px)"
-                  className="case-study-img-placeholder"
-                />
+                <img src="/assets/images/support-automation.png" alt="AI-powered first-line support automation" className="case-study-img-placeholder" />
               </div>
             </div>
 

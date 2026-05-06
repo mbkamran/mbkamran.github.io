@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import ImagePlaceholder from '../../components/ImagePlaceholder'
+
 
 export default function Post2() {
   return (
@@ -17,11 +17,11 @@ export default function Post2() {
         <span><i className="fa-regular fa-user" /> Muhammad Bin Kamran</span>
       </div>
 
-      <ImagePlaceholder
-        icon="fa-solid fa-code-compare"
-        label="Post Header Image"
-        hint="RAG vs Fine-Tuning comparison diagram or knowledge graph visual (1200×600px)"
-        className="post-hero-img"
+      <img 
+        src="/assets/images/blog-rag-vs-finetuning.png" 
+        alt="RAG vs Fine-Tuning Comparison" 
+        className="post-hero-img" 
+        style={{ objectFit: 'cover' }}
       />
 
       <div className="post-body">

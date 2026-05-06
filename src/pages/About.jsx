@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import ImagePlaceholder from '../components/ImagePlaceholder'
+
 import CTASection from '../components/CTASection'
 
 export default function About() {
@@ -32,11 +32,11 @@ export default function About() {
               </div>
             </div>
             <div className="about-hero-right">
-              <ImagePlaceholder
-                icon="fa-regular fa-circle-user"
-                label="Professional Portrait"
-                hint="Upload: high-quality professional headshot or upper-body portrait, well-lit, neutral background (600×700px)"
-                className="about-photo-placeholder"
+              <img 
+                src="/assets/images/home-hero-portrait2.jpg" 
+                alt="Professional Portrait" 
+                className="about-photo-placeholder" 
+                style={{ objectFit: 'cover' }} 
               />
             </div>
           </div>
@@ -69,11 +69,11 @@ export default function About() {
               </p>
             </div>
             <div className="story-photo">
-              <ImagePlaceholder
-                icon="fa-solid fa-laptop-code"
-                label="Candid / Working Photo"
-                hint="Upload: candid shot at desk, presenting, or in a professional setting (600×500px)"
-                className="story-photo-placeholder"
+              <img 
+                src="/assets/images/prototype_3.png" 
+                alt="Working Photo" 
+                className="story-photo-placeholder" 
+                style={{ objectFit: 'cover' }} 
               />
             </div>
           </div>

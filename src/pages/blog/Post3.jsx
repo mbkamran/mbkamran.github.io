@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import ImagePlaceholder from '../../components/ImagePlaceholder'
+
 
 export default function Post3() {
   return (
@@ -17,11 +17,11 @@ export default function Post3() {
         <span><i className="fa-regular fa-user" /> Muhammad Bin Kamran</span>
       </div>
 
-      <ImagePlaceholder
-        icon="fa-solid fa-chart-line"
-        label="Post Header Image"
-        hint="Business productivity chart, cost reduction visual, or automation ROI illustration (1200×600px)"
-        className="post-hero-img"
+      <img 
+        src="/assets/images/blog-automation-roi.png" 
+        alt="Automation ROI Chart" 
+        className="post-hero-img" 
+        style={{ objectFit: 'cover' }}
       />
 
       <div className="post-body">

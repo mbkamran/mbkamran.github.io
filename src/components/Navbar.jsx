@@ -32,7 +32,7 @@ export default function Navbar() {
         </ul>
 
         <a href="mailto:muhammadbkamran@gmail.com" className="btn btn-primary nav-cta">
-          Book a Conversation
+          Contact
         </a>
 
         <button

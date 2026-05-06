@@ -979,8 +979,10 @@ section {
 
 .case-study-img-placeholder {
     width: 100%;
-    min-height: 340px;
+    height: 340px;
+    object-fit: cover;
     border-radius: 12px;
+    display: block;
 }
 
 .case-study-category {

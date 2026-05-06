@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import ImagePlaceholder from '../../components/ImagePlaceholder'
+
 
 export default function Post1() {
   return (
@@ -17,11 +17,11 @@ export default function Post1() {
         <span><i className="fa-regular fa-user" /> Muhammad Bin Kamran</span>
       </div>
 
-      <ImagePlaceholder
-        icon="fa-solid fa-diagram-project"
-        label="Post Header Image"
-        hint="Agentic workflow diagram or abstract AI network visual (1200×600px)"
-        className="post-hero-img"
+      <img 
+        src="/assets/images/blog-agentic-ai.png" 
+        alt="Agentic AI Workflow Diagram" 
+        className="post-hero-img" 
+        style={{ objectFit: 'cover' }}
       />
 
       <div className="post-body">
